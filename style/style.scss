@@ -1,0 +1,280 @@
+@import 
+url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Inter',sans-serif;
+  //font-family: 'Lexend Deca',sans-serif;
+  background-color: #090b1a;
+}
+
+.container{
+  //border: 1px solid white;//temporary settings
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  background-color: #1b1938;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  border-radius: 1rem;
+  max-width: 1140px;
+  margin: 5%;
+}
+
+.card-text-part{
+  //border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6%;
+
+  .block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 85%;
+
+  }
+
+  h1{
+    color: #fff;
+    font-size: 3.4rem;
+    margin-bottom: 2.8rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.6px;
+  }
+
+  span{
+    color: #aa5cdb;
+  }
+
+  .text{
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+.stats{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.stat-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stat-num{
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.stat-title{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  font-family: 'Lexend Deca',sans-serif;
+  margin-top: 0.8rem;
+}
+
+.card-img-part{
+  background-color: #fff;
+  border-radius: 0 1rem 1rem 0;
+  padding: relative;
+}
+
+img{
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+.img-mobile{
+  display: none;
+}
+
+.pink{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+  border-radius: 0 1rem 1rem 0;
+}
+.attribution{
+  text-align: center;
+  color: white;
+}
+
+@media  screen and(max-width:375px) {
+  .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    max-width: 88%;
+  }
+  .stats{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.6rem;
+  }
+
+  .card-img-part{
+    order: 1;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  img{
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .img-desktop{
+    display: none;
+  }
+
+  .img-mobile{
+    display: block;
+    width: 100%;
+  }
+
+  .pink{
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .card-text-part{
+    order: 2;
+    padding: 10%;
+
+    h1{
+      font-size: 2.6rem;
+      text-align: center;
+      line-height: 3.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .text{
+      text-align: center;
+      width: 100%;
+
+    }
+  }
+  
+}
+
+@media  screen and(max-width:1050px) {
+  .stat-title{
+    font-size: 1.1rem;
+  }
+
+  .card-text-part{
+    .block{
+      width: 100%;
+    }
+
+    h1{
+      font-size: 3.2rem;
+      line-height: 3.8rem;
+      margin-bottom: 2rem;
+    }
+    .text{
+      width: 100%;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.5px;
+    }
+  }
+} 
+
+@media  screen and(max-width:980px) {
+  .container{
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    max-width: 78%;
+    margin: 3% 0;
+  }
+  .stats{
+    flex-wrap: wrap;
+  }
+
+  .stat-block{
+    display: flex;
+    flex-direction: column;
+    margin: 1.6rem;
+  }
+
+  .card-img-part{
+    order: 1;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  img{
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .img-desktop{
+    display: none;
+  }
+
+  .img-mobile{
+    display: block;
+    width: 100%;
+  }
+
+  .pink{
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .card-text-part{
+    order: 2;
+    padding: 10%;
+
+    h1{
+      font-size: 3.4rem;
+      line-height: 4.2rem;
+      margin-bottom: 3.0rem;
+      letter-spacing: 0.6px;
+    }
+
+    .text{
+      width: 100%;
+
+    }
+  }
+  
+}
